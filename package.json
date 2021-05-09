@@ -1,28 +1,29 @@
 {
-  "name": "tutoring-api",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Haybee96/tutoring-api.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Haybee96/tutoring-api/issues"
-  },
-  "homepage": "https://github.com/Haybee96/tutoring-api#readme",
-  "dependencies": {
-    "bcryptjs": "^2.4.3",
-    "dotenv": "^8.2.0",
-    "express": "^4.17.1",
-    "express-validator": "^6.10.1",
-    "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.12.7"
-  }
+    "name": "tutoring-api",
+    "version": "1.0.0",
+    "description": "",
+    "main": "server.js",
+    "scripts": {
+        "test": "node server.js",
+        "dev": "nodemon server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Haybee96/tutoring-api.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Haybee96/tutoring-api/issues"
+    },
+    "homepage": "https://github.com/Haybee96/tutoring-api#readme",
+    "dependencies": {
+        "bcryptjs": "^2.4.3",
+        "dotenv": "^8.2.0",
+        "express": "^4.17.1",
+        "express-validator": "^6.10.1",
+        "jsonwebtoken": "^8.5.1",
+        "mongoose": "^5.12.7"
+    }
 }
