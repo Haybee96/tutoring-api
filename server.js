@@ -3,8 +3,10 @@
  */
 
 const express = require('express');
+
 const connectDB = require('./config/db');
-const IndexRoutes = require('./routes/index.routes');
+const indexRoute = require('./routes/indexRoute');
+const userRoute = require('./routes/userRoute');
 require('dotenv').config();
 
 // Connect Database
@@ -13,11 +15,13 @@ connectDB();
 // Initalize express
 const app = express();
 
-// Main routes
-app.use('/api/v1/', IndexRoutes);
-
 // Initialize express middleware
-app.use(express.json({ limit: '10kb' }));
+app.use(express.json({ extended: false }));
+
+// Main routes
+app.use('/api/v1/', indexRoute);
+app.use('/api/v1/auth', userRoute);
+
 
 // Get PORT
 const port = process.env.PORT || 5050;
